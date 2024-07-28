@@ -1,0 +1,3 @@
+ensure==1.0.2
+python-box
+-e .

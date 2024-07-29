@@ -6,3 +6,10 @@ joblib
 tensorflow
 pillow
 scipy
+dvc
+mlflow
+notebook
+matplotlib
+tqdm
+types-PyYAML
+pandas

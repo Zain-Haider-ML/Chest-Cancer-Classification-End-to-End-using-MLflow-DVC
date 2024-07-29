@@ -1,6 +1,6 @@
 from FineTunedClassifier.constants import *
 from FineTunedClassifier.utils.common import read_yaml, create_directories
-from FineTunedClassifier.entity.config_entity import PrepareBaseModelConfig, TrainingConfig
+from FineTunedClassifier.entity.config_entity import PrepareBaseModelConfig, TrainingConfig, EvaluationConfig
 
 
 class ConfigurationManager:
@@ -53,3 +53,15 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            testing_data="artifacts/dataset/test",
+            mlflow_uri="https://dagshub.com/hzain8206/Chest-Cancer-Classification-End-to-End-using-MLflow-DVC.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

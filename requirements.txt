@@ -4,3 +4,5 @@ python-box
 pyYAML
 joblib
 tensorflow
+pillow
+scipy

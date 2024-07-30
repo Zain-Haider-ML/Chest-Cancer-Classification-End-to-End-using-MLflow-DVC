@@ -1,0 +1,12 @@
+artifact/dataset
+demo
+env
+venv
+logs
+infrastructure
+docs
+sensor.egg-info
+LICENSE
+README.md
+notebooks
+scripts

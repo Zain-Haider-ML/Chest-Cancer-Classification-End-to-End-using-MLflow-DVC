@@ -13,3 +13,5 @@ matplotlib
 tqdm
 types-PyYAML
 pandas
+Flask
+Flask-Cors

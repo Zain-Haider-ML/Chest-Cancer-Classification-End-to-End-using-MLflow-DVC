@@ -32,9 +32,9 @@ class PredictionPipeline:
         elif result == 1:
             prediction = 'large cell carcinoma'
             return [{ "image" : prediction}]
-        elif result == 2:
-            prediction = 'Normal'
-            return [{ "image" : prediction}]
-        else:
-            prediction = 'squamous cell carcinoma'
-            return [{ "image" : prediction}]
+        # elif result == 2:
+        #     prediction = 'Normal'
+        #     return [{ "image" : prediction}]
+        # else:
+        #     prediction = 'squamous cell carcinoma'
+        #     return [{ "image" : prediction}]

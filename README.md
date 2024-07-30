@@ -15,21 +15,6 @@ Update the dvc.yaml
 
 
 
-# AZURE-CICD-Deployment-with-Github-Actions
-
-## Save pass:
-
-C8Us2DnLvBeXCP6axRXWHJC4eSwpFtnDbdPC0byXyH+ACRDvK8i3
-
-
-## Run from terminal:
-
-docker build -t chestcancerclassificationapp.azurecr.io/mltest:latest .
-
-docker login chestcancerclassificationapp.azurecr.io
-
-docker push chestcancerclassificationapp.azurecr.io/mltest:latest
-
 
 ## Deployment Steps:
 
